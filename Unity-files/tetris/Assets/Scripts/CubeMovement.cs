@@ -10,11 +10,30 @@ using System.Collections;
         private Vector3 input;
         SerialRead serial_script;
         public string command;
+        private Vector3 absolute_pos;
 
         int counter = 0;
-  
+        bool disable = false;
 
-        void serial2Output()
+        void OnCollisionEnter(Collision col)
+        {
+        //if (col.gameObject.name == "Floor")
+        //{
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            absolute_pos = transform.position;
+      
+            disable = true;
+            itemSpawn temp = GameObject.Find("SpawnPoint").GetComponent("itemSpawn") as itemSpawn;
+            temp.SpawnBlock();
+            Debug.Log("Next Block");
+
+            
+            //}
+        }
+
+
+
+    void serial2Output()
         {
         if (command == "U") {
             //input = new Vector3(0, -1, 15);
@@ -58,28 +77,27 @@ using System.Collections;
         // Update is called once per frame
         void Update()
         {
-        /*
-        //test the movement of the robot
-        a.ind = 2;      //should go to cubicle 2
-        transform.position = Vector3.MoveTowards(transform.position, empPoints[a.ind].position, moveSpeed * Time.deltaTime);
-        */
-        //Controlled movement - responds to pressing up, down, left, and right arrow keys
 
-            if (counter >= 10)
+            if (!disable)
             {
-                serialListener();
-                counter = 0;
+                if (counter >= 10)
+                {
+                    serialListener();
+                    counter = 0;
+                }
+
+
+
+                if (GetComponent<Rigidbody>().velocity.magnitude < maxSpeed)
+                {
+                    GetComponent<Rigidbody>().AddForce(input * moveSpeed);
+                }
+
+
+                counter++;
+            }else {
+                transform.position = absolute_pos;
             }
-
-        Debug.Log(transform.position.x);
-
-        if (GetComponent<Rigidbody>().velocity.magnitude < maxSpeed)
-            {
-                GetComponent<Rigidbody>().AddForce(input*moveSpeed);
-            }
-
-
-            counter++;
         }
     }
 
