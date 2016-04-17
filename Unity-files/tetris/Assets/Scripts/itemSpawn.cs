@@ -2,12 +2,16 @@
 using System.Collections;
 
 public class itemSpawn : MonoBehaviour {
+    public static itemSpawn S;
 
 	public Transform spawnPoint;
 	public float spawnTime = 2.0f;
 	public GameObject[] block;
 
-
+    void Awake()
+    {
+        S = this;
+    }
 	// Use this for initialization
 	void Start () {
         SpawnBlock();
@@ -18,11 +22,11 @@ public class itemSpawn : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        /*
-		if (Input.anyKeyDown) {
-			SpawnBlock ();
-		}
-        */
+        
+		//if (Input.anyKeyDown) {
+			//SpawnBlock ();
+		//}
+        
 	}
 
 	public void SpawnBlock () {

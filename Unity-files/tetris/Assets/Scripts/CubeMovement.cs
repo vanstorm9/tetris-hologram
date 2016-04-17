@@ -19,33 +19,36 @@ using System.Collections;
         {
         //if (col.gameObject.name == "Floor")
         //{
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-            absolute_pos = transform.position;
+            //transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            //absolute_pos = transform.position;
       
             disable = true;
-            itemSpawn temp = GameObject.Find("SpawnPoint").GetComponent("itemSpawn") as itemSpawn;
-            temp.SpawnBlock();
-            Debug.Log("Next Block");
+            //itemSpawn temp = GameObject.Find("SpawnPoint").GetComponent("itemSpawn") as itemSpawn;
+            //temp.SpawnBlock();
 
-            
+    
+
+            Debug.Log("Next Block Next Block");
+
+        
+        //this.disable = true;
             //}
         }
-
 
 
     void serial2Output()
         {
         if (command == "U") {
             //input = new Vector3(0, -1, 15);
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z+1);
+            transform.position = new Vector3(transform.position.x, transform.position.y-1, transform.position.z+1);
         } else if (command == "D") {
             //input = new Vector3(0, -1, -15);
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z-1);
+            transform.position = new Vector3(transform.position.x, transform.position.y-1, transform.position.z-1);
         } else if (command == "L") {
             //input = new Vector3(-15, -1, 0);
-            transform.position = new Vector3(transform.position.x - 1, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x - 1, transform.position.y-1, transform.position.z);
         } else if (command == "R") {
-            transform.position = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x + 1, transform.position.y-1, transform.position.z);
             //input = new Vector3(15, -1, 0);
         } else if (command == "RTL") {
             transform.Rotate(0, 90, 0);
@@ -86,17 +89,18 @@ using System.Collections;
                     counter = 0;
                 }
 
+           // transform.position = new Vector3(transform.position.x, transform.position.y - 1, transform.position.z + 1);
 
-
-                if (GetComponent<Rigidbody>().velocity.magnitude < maxSpeed)
+           /* if (GetComponent<Rigidbody>().velocity.magnitude < maxSpeed)
                 {
                     GetComponent<Rigidbody>().AddForce(input * moveSpeed);
-                }
-
+                }*/
+            Debug.Log(counter);
 
                 counter++;
             }else {
-                transform.position = absolute_pos;
+                //transform.position = absolute_pos;
+                this.disable = true;
             }
         }
     }

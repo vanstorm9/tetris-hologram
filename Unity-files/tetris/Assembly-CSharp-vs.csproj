@@ -46,12 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CubeMovement.cs" />
+     <Compile Include="Assets\Scripts\CubeMovement.cs" />
      <Compile Include="Assets\Scripts\SerialRead.cs" />
      <Compile Include="Assets\Scripts\SerialRead_sample.cs" />
      <Compile Include="Assets\Scripts\SerialWork.cs" />
+     <Compile Include="Assets\Scripts\ShadowMovement.cs" />
      <Compile Include="Assets\Scripts\itemSpawn.cs" />
-     <Compile Include="Assets\ShadowMovement.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity32/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
