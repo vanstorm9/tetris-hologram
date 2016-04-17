@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{EFD7E99D-2102-8CDD-B50C-B555A54F05B6}</ProjectGuid>
+	<ProjectGuid>{A09C0C31-0766-FDE3-E8CA-C8827E8F3A9E}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,49 +46,62 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\LeapMotion\Editor\AdvancedMode.cs" />
-     <Compile Include="Assets\LeapMotion\Editor\HandControllerEditor.cs" />
-     <Compile Include="Assets\LeapMotion\Editor\LeapImageBasedMaterialEditor.cs" />
-     <Compile Include="Assets\LeapMotion\Editor\LeapImageRetrieverEditor.cs" />
-     <Compile Include="Assets\LeapMotionVR\Scripts\ConfigurationManager\Editor\HMRConfigurationManagerEditor.cs" />
-     <Compile Include="Assets\LeapMotionVR\Scripts\Editor\LeapCameraAlignmentEditor.cs" />
-     <Compile Include="Assets\OVR\Moonlight\Editor\OVRMoonlightLoader.cs" />
+     <Compile Include="Assets\Assets_tet\LeapMotion\Editor\AdvancedMode.cs" />
+     <Compile Include="Assets\Assets_tet\LeapMotion\Editor\HandControllerEditor.cs" />
+     <Compile Include="Assets\Assets_tet\LeapMotion\Editor\LeapImageBasedMaterialEditor.cs" />
+     <Compile Include="Assets\Assets_tet\LeapMotion\Editor\LeapImageRetrieverEditor.cs" />
+     <Compile Include="Assets\Assets_tet\LeapMotionVR\Scripts\ConfigurationManager\Editor\HMRConfigurationManagerEditor.cs" />
+     <Compile Include="Assets\Assets_tet\LeapMotionVR\Scripts\Editor\LeapCameraAlignmentEditor.cs" />
+     <Compile Include="Assets\Assets_tet\OVR\Moonlight\Editor\OVRMoonlightLoader.cs" />
+     <None Include="Assets\Assets_tet\LeapMotion\Widgets\Shaders\SelfIllumAlpha.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
-     <None Include="Assets\Plugins\donotdelete.txt" />
-     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
-     <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />
-     <None Include="Assets\Plugins\Android\assets\donotdelete.txt" />
-     <None Include="Assets\LeapMotion\README_BEFORE_UPDATING.txt" />
-     <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
-     <None Include="Assets\LeapMotion\DemoResources\ScrollerText.txt" />
-     <None Include="Assets\LeapMotion\readme.txt" />
-     <None Include="Assets\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
-     <None Include="Assets\LeapMotion\Resources\ImageHandHighlight.shader" />
+     <None Include="Assets\Assets_tet\OVR\Moonlight\Resources\Unlit Transparent Color.shader" />
+     <None Include="Assets\Assets_tet\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+     <None Include="Assets\Assets_tet\LeapMotion\Shaders\RimShading.shader" />
+     <None Include="Assets\Assets_tet\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+     <None Include="Assets\Assets_tet\LeapMotion\Resources\PassthroughBackground.shader" />
+     <None Include="Assets\Assets_tet\LeapMotion\DemoResources\ScrollerText.txt" />
+     <None Include="Assets\Assets_tet\LeapMotion\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Assets_tet\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+     <None Include="Assets\Assets_tet\LeapMotion\Dependencies.txt" />
+     <None Include="Assets\Assets_tet\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
+     <None Include="Assets\Assets_tet\LeapMotion\Resources\ThresholdOverlay.shader" />
      <None Include="Assets\UnityChan\license.txt" />
-     <None Include="Assets\LeapMotion\Shaders\RimShading.shader" />
-     <None Include="Assets\LeapMotion\Dependencies.txt" />
+     <None Include="Assets\Assets_tet\LeapMotion\readme.txt" />
+     <None Include="Assets\Assets_tet\LeapMotion\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Assets_tet\blue-eyes white dragon\ReadMe.txt" />
+     <None Include="Assets\Assets_tet\Plugins\Android\assets\donotdelete.txt" />
+     <None Include="Assets\Assets_tet\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Assets_tet\Plugins\x86\donotdelete.txt" />
+     <None Include="Assets\Assets_tet\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
-     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
-     <None Include="Assets\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
-     <None Include="Assets\LeapMotion\Resources\ThresholdOverlay.shader" />
-     <None Include="Assets\OVR\Moonlight\Resources\Unlit Transparent Color.shader" />
+     <None Include="Assets\Assets_tet\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
-     <None Include="Assets\LeapMotion\Resources\PassthroughForeground.shader" />
+     <None Include="Assets\Assets_tet\LeapMotion\Version.txt" />
+     <None Include="Assets\Assets_tet\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+     <None Include="Assets\Assets_tet\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\blue-eyes white dragon\ReadMe.txt" />
-     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Assets_tet\Plugins\donotdelete.txt" />
+     <None Include="Assets\Assets_tet\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
-     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Lighted.shader" />
-     <None Include="Assets\LeapMotion\Resources\PassthroughBackground.shader" />
      <None Include="Assets\UnityChan\Stage\Shader\AlphaMask.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
-     <None Include="Assets\LeapMotion\Widgets\Shaders\SelfIllumAlpha.shader" />
+     <None Include="Assets\Assets_tet\LeapMotion\Resources\PassthroughForeground.shader" />
+     <None Include="Assets\Assets_tet\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />
+     <None Include="Assets\Assets_tet\Plugins\x86_64\donotdelete.txt" />
+     <None Include="Assets\Assets_tet\UnityChan\license.txt" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
-     <None Include="Assets\LeapMotion\Version.txt" />
-     <None Include="Assets\Plugins\x86\donotdelete.txt" />
+     <None Include="Assets\Assets_tet\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+     <None Include="Assets\Assets_tet\UnityChan\Stage\Shader\AlphaMask.shader" />
+     <None Include="Assets\Assets_tet\LeapMotion\Resources\ImageHandHighlight.shader" />
+     <None Include="Assets\Assets_tet\LeapMotion\Materials\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\Assets_tet\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+     <None Include="Assets\Assets_tet\LeapMotion\README_BEFORE_UPDATING.txt" />
+     <None Include="Assets\Assets_tet\LeapMotion\Resources\LeapCG.cginc" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity32/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -105,7 +118,7 @@
  <HintPath>C:/Program Files (x86)/Unity32/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>C:/Users/Anthony Lowhur/Documents/Programming/Unity/git-projects/projection-test/hologram_test/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>C:/Users/Anthony Lowhur/Documents/Programming/Unity/git-projects/tetris-hologram/Unity-files/hologram-sample/Assets/Assets_tet/Plugins/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity32/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -143,10 +156,6 @@
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files (x86)/Unity32/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{670A4482-FAE5-B62E-398B-4B60A0474A9F}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

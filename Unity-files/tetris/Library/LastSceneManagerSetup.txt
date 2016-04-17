@@ -1,4 +1,4 @@
 sceneSetups:
-- path: testing.unity
+- path: C:/Users/Anthony Lowhur/Documents/Programming/Unity/git-projects/tetris-hologram/Unity-files/hologram-sample/Assets/test.unity
   isLoaded: 1
   isActive: 1
