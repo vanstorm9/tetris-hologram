@@ -23,6 +23,8 @@ const int ledPin =  13;      // the number of the LED pin
 const int RightPin = 4;  
 const int UpPin = 7;  
 const int DownPin = 3;     
+const int RotateRPin = 8;
+const int RotateLPin = 5;
 
 
 // variables will change:
@@ -30,6 +32,9 @@ int buttonStateLeft = 0;         // variable for reading the pushbutton status
 int buttonStateRight = 0; 
 int buttonStateUp = 0; 
 int buttonStateDown = 0; 
+
+int buttonStateRotateL = 0; 
+int buttonStateRotateR = 0; 
 
 
 char byte_val;
@@ -42,6 +47,9 @@ void initalizeDigitalRead()
     buttonStateUp = digitalRead(UpPin);
     buttonStateDown = digitalRead(DownPin);
 
+     buttonStateRotateL = digitalRead(RotateLPin);
+     buttonStateRotateR = digitalRead(RotateRPin);
+
 }
 
 void buttonControl()
@@ -50,26 +58,30 @@ void buttonControl()
   
   if (buttonStateLeft == HIGH) {     
     // turn LED on:    
-    Serial.print("LEFT was pressed");
+    Serial.print("L");
     digitalWrite(ledPin, HIGH);  
     digitalWrite(LED, HIGH);
   } 
 
   if(buttonStateRight == HIGH)
   {
-    Serial.print("RIGHT was pressed");
+    Serial.print("R");
     digitalWrite(ledPin, HIGH);
     digitalWrite(LED, HIGH);   
   } else if(buttonStateUp == HIGH){
-    Serial.print("UP was pressed");
+    Serial.print("U");
      digitalWrite(ledPin, HIGH);  
     digitalWrite(LED, HIGH);
   } else if(buttonStateDown == HIGH){
-    Serial.print("DOWN was pressed");
+    Serial.print("D");
      digitalWrite(ledPin, HIGH);  
     digitalWrite(LED, HIGH);
+  } else if(buttonStateRotateL == HIGH){
+    Serial.print("RTL");
+    } else if(buttonStateRotateR == HIGH){
+    Serial.print("RTR");
   }else{
-    Serial.print("No imput");
+    //Serial.print("No imput");
     // turn LED off:
     digitalWrite(ledPin, LOW);
     digitalWrite(LED, LOW); 
@@ -99,6 +111,8 @@ void setup()
   pinMode(UpPin, INPUT);  
   pinMode(DownPin, INPUT);  
 
+  pinMode(RotateLPin, INPUT);  
+  pinMode(RotateRPin, INPUT);  
 
   pinMode(LED, OUTPUT);    
 
